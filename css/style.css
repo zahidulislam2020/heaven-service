@@ -26,7 +26,7 @@ a {
 
 nav.navbar {
     width: 100%;
-    height: 80px;
+    height: 15vh;
     background-color: teal;
     position: sticky;
     top: 0;
@@ -52,6 +52,10 @@ div.hamburger-container {
 /* Midea Query implemented on Extra Small Device */
 
 @media (min-width: 576px) and (max-width: 970px){
+    nav.navbar {
+        height: 13vh;
+    }
+
     div.hamburger-container {
         float: left;
         height: 100%;
@@ -78,6 +82,10 @@ div.hamburger-container {
 }
 
 @media (max-width: 575px) {
+    nav.navbar {
+        height: 10vh;
+    }
+
     div.hamburger-container {
         float: left;
         height: 100%;
@@ -298,7 +306,7 @@ div.menu-container ul.menu-bar div.menu-item-rack i {
 
 div.bannar-section {
     width: 100%;
-    min-height: 100vh;
+    height: 85vh;
     position: relative;
 }
 
@@ -402,6 +410,10 @@ div.bannar-title-section div.btn button:hover {
 /* Midea Query implemented on Extra Small Device */
 
 @media (min-width: 576px) and (max-width: 970px) {
+    div.bannar-section {
+        height: 80vh;
+    }
+
     div.bannar-title-section {
         top: 70%;
         left: 50%;
@@ -437,6 +449,10 @@ div.bannar-title-section div.btn button:hover {
 }
 
 @media (max-width: 575px) {
+    div.bannar-section {
+        height: 80vh;
+    }
+
     div.bannar-title-section {
         top: 70%;
         left: 50%;
