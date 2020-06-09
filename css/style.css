@@ -364,7 +364,7 @@ div.bannar-title h2 {
     animation: glow 2s ease-in-out infinite alternate;
 }
 
-@keyframes glow {
+/* @keyframes glow {
     from {
         color: #fff;
         text-shadow: 0 0 5px #00fff2, 0 0 10px #00fff2, 0 0 15px #00fff2, 0 0 20px #00fff2, 0 0 25px #00fff2, 0 0 30px #00fff2, 0 0 35px #00fff2, 0 0 40px #00fff2;
@@ -374,7 +374,7 @@ div.bannar-title h2 {
         color: gray;
         text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 1 80px #00fff2;
     }
-}
+} */
 
 div.bannar-title h2 span {
     display: inline-block;
@@ -411,7 +411,7 @@ div.bannar-title-section div.btn button:hover {
 
 @media (min-width: 576px) and (max-width: 970px) {
     div.bannar-section {
-        height: 80vh;
+        height: 87vh;
     }
 
     div.bannar-title-section {
@@ -450,7 +450,7 @@ div.bannar-title-section div.btn button:hover {
 
 @media (max-width: 575px) {
     div.bannar-section {
-        height: 80vh;
+        height: 90vh;
     }
 
     div.bannar-title-section {
@@ -486,5 +486,11 @@ div.bannar-title-section div.btn button:hover {
         background-color: transparent;
     }
 
+}
+
+div.test {
+    width: 100%;
+    height: 40vh;
+    background-color: aqua;
 }
 
