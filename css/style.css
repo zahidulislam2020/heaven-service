@@ -486,11 +486,7 @@ div.bannar-title-section div.btn button:hover {
         background-color: transparent;
     }
 
-}
+} /* Ends of Bannar */
 
-div.test {
-    width: 100%;
-    height: 40vh;
-    background-color: aqua;
-}
+
 
