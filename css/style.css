@@ -1,0 +1,436 @@
+/* Page Resetting */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common Styling */
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #d4d4d4;
+}
+
+/* Start Navbar styling */
+
+nav.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: teal;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+div.logo-container {
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+div.hamburger-container {
+    display: none;
+}
+
+/* Midea Query implemented on Extra Small Device */
+
+@media (min-width: 576px) and (max-width: 970px){
+    div.hamburger-container {
+        float: left;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 25px;
+        padding-right: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    div.hamburger-container i.fa-bars,
+    div.hamburger-container i.fa-times {
+        color: #d4d4d4;
+        z-index: 2;
+        position: absolute;
+    }
+
+    div.hamburger-container i.fa-times {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    div.hamburger-container {
+        float: left;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 25px;
+        padding-right: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    div.hamburger-container i.fa-bars,
+    div.hamburger-container i.fa-times {
+        color: #d4d4d4;
+        z-index: 2;
+        position: absolute;
+    }
+
+    div.hamburger-container i.fa-times {
+        display: none;
+    }
+}
+
+a.logo {
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    z-index: 2;
+}
+
+small {
+    color: #d4d4d498;
+    z-index: 2;
+}
+
+div.search-container {
+    float: right;
+    width: 270px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+div.search-container input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    background-color: #d4d4d4;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+div.search-container i.fa-search {
+    color: teal;
+    position: absolute;
+    left: 80%;
+}
+
+/* Midea Query implemented on Extra Small Device */
+
+@media (min-width: 576px) and (max-width: 970px) {
+    div.search-container {
+        width: 100%;
+        height: 65%;
+        justify-content: center;
+        padding: 0 0px;
+    }
+
+    div.search-container input {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        padding-left: 55px;
+        border-radius: 0px;
+    }
+
+    div.search-container i.fa-search {
+        color: teal;
+        position: absolute;
+        font-size: 22px;
+        left: 3%;
+    }
+}
+
+@media (max-width: 575px) {
+    div.search-container {
+        width: 100%;
+        height: 65%;
+        justify-content: center;
+        padding: 0 0px;
+    }
+
+    div.search-container input {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        padding-left: 55px;
+        border-radius: 0px;
+    }
+
+    div.search-container i.fa-search {
+        color: teal;
+        position: absolute;
+        font-size: 22px;
+        left: 3%;
+    }
+}
+
+div.menu-container {
+    margin: 0 auto;
+    width: 40%;
+    height: 100%;
+}
+
+div.menu-container ul.menu-bar {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Midea Query implemented on Extra Small Device */
+
+@media (min-width: 576px) and (max-width: 970px) {
+    div.menu-container ul.menu-bar {
+        display: none;
+    }
+
+    div.menu-container-sd {
+        display: inline-block;
+        flex-direction: column;
+        height: 100vh;
+        background-color: teal;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: -400px;
+        transition: all 0.3s ease;
+    }
+
+    div.menu-container-sd-appear {
+        margin-left: 0px;
+    }
+
+    div.menu-container-sd ul.menu-bar {
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width: 575px) {
+    div.menu-container ul.menu-bar {
+        display: none;
+    }
+
+    div.menu-container-sd {
+        display: inline-block;
+        flex-direction: column;
+        height: 100vh;
+        background-color: teal;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: -300px;
+        transition: all 0.3s ease;
+    }
+
+    div.menu-container-sd-appear {
+        margin-left: 0px;
+    }
+
+    div.menu-container-sd ul.menu-bar {
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+/* End Navigation Styling */
+
+/* Start Bannar */
+
+div.bannar-section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+div.image-rack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+div.bannar-section div.active {
+    opacity: 1;
+}
+
+div.image-rack::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+div.bannar-section div.image-rack img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.bannar-title-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 200px 0 0 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+}
+
+div.bannar-title {
+    color: #fff;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+div.bannar-title h2 {
+    word-spacing: 5px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        color: #fff;
+        text-shadow: 0 0 5px #00fff2, 0 0 10px #00fff2, 0 0 15px #00fff2, 0 0 20px #00fff2, 0 0 25px #00fff2, 0 0 30px #00fff2, 0 0 35px #00fff2, 0 0 40px #00fff2;
+    }
+ 
+    to {
+        color: gray;
+        text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 1 80px #00fff2;
+    }
+}
+
+div.bannar-title h2 span {
+    display: inline-block;
+    font-weight: 900;
+    transform: skewX(-20deg);
+    letter-spacing: 2px;
+}
+
+div.bannar-title-section div.btn button {
+    width: 176px;
+    height: 35px;
+    outline: none;
+    border: 1px solid teal;
+    cursor: pointer;
+    background-color: transparent;
+    color: #d4d4d4;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+div.bannar-title-section div.btn button:hover {
+    background-color: teal;
+
+}
+
+/* Midea Query implemented on Extra Small Device */
+
+@media (min-width: 576px) and (max-width: 970px) {
+    div.bannar-title-section {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+    }
+
+    div.bannar-title {
+        line-height: 1.8;
+    }
+
+    div.bannar-title h2 {
+        word-spacing: 2px;
+        font-size: 18px;
+    }
+
+    div.bannar-title p {
+        font-size: 14px;
+    }
+
+    div.bannar-title-section div.btn button {
+        width: 128px;
+        height: 35px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    div.bannar-title-section div.btn button:hover {
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 575px) {
+    div.bannar-title-section {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+    }
+
+    div.bannar-title {
+        line-height: 1.8;
+    }
+
+    div.bannar-title h2 {
+        word-spacing: 2px;
+        font-size: 18px;
+    }
+
+    div.bannar-title p {
+        font-size: 14px;
+    }
+
+    div.bannar-title-section div.btn button {
+        width: 128px;
+        height: 35px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    div.bannar-title-section div.btn button:hover {
+        background-color: transparent;
+    }
+
+}
+
