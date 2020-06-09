@@ -7,6 +7,10 @@
     /* outline: 1px red solid !important; visibility: visible !important; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Common Styling */
 
 body {
@@ -30,6 +34,7 @@ nav.navbar {
     right: 0;
     bottom: 0;
     z-index: 99;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);
 }
 
 div.logo-container {
@@ -37,7 +42,7 @@ div.logo-container {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    margin: 0 20px;
 }
 
 div.hamburger-container {
@@ -53,8 +58,8 @@ div.hamburger-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 25px;
-        padding-right: 10px;
+        margin-left: 25px;
+        margin-right: 10px;
         font-size: 22px;
         cursor: pointer;
         position: relative;
@@ -79,8 +84,8 @@ div.hamburger-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 25px;
-        padding-right: 10px;
+        margin-left: 25px;
+        margin-right: 10px;
         font-size: 22px;
         cursor: pointer;
         position: relative;
@@ -99,7 +104,7 @@ div.hamburger-container {
 }
 
 a.logo {
-    padding-right: 10px;
+    margin-right: 10px;
     font-weight: 600;
     font-size: 22px;
     z-index: 2;
@@ -112,16 +117,14 @@ small {
 
 div.search-container {
     float: right;
-    width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    margin-right: 10px;
     position: relative;
 }
 
 div.search-container input {
-    width: 100%;
     height: 30px;
     padding: 10px;
     background-color: #d4d4d4;
@@ -133,7 +136,7 @@ div.search-container input {
 div.search-container i.fa-search {
     color: teal;
     position: absolute;
-    left: 80%;
+    left: 85%;
 }
 
 /* Midea Query implemented on Extra Small Device */
@@ -141,9 +144,9 @@ div.search-container i.fa-search {
 @media (min-width: 576px) and (max-width: 970px) {
     div.search-container {
         width: 100%;
-        height: 65%;
+        height: 60%;
         justify-content: center;
-        padding: 0 0px;
+        margin: 0;
     }
 
     div.search-container input {
@@ -165,9 +168,9 @@ div.search-container i.fa-search {
 @media (max-width: 575px) {
     div.search-container {
         width: 100%;
-        height: 65%;
+        height: 60%;
         justify-content: center;
-        padding: 0 0px;
+        margin: 0;
     }
 
     div.search-container input {
@@ -187,8 +190,6 @@ div.search-container i.fa-search {
 }
 
 div.menu-container {
-    margin: 0 auto;
-    width: 40%;
     height: 100%;
 }
 
@@ -196,8 +197,19 @@ div.menu-container ul.menu-bar {
     height: 100%;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+div.menu-container ul.menu-bar div.menu-item-rack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.menu-container ul.menu-bar div.menu-item-rack i {
+    margin-right: 8px;
 }
 
 /* Midea Query implemented on Extra Small Device */
@@ -211,6 +223,7 @@ div.menu-container ul.menu-bar {
         display: inline-block;
         flex-direction: column;
         height: 100vh;
+        width: 50%;
         background-color: teal;
         position: absolute;
         left: 0;
@@ -229,6 +242,13 @@ div.menu-container ul.menu-bar {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 10%;
+    }
+
+    div.menu-container ul.menu-bar div.menu-item-rack {
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 }
@@ -242,11 +262,12 @@ div.menu-container ul.menu-bar {
         display: inline-block;
         flex-direction: column;
         height: 100vh;
+        width: 50%;
         background-color: teal;
         position: absolute;
         left: 0;
         top: 0;
-        margin-left: -40%;
+        margin-left: -50%;
         transition: all 0.3s ease;
     }
 
@@ -260,6 +281,13 @@ div.menu-container ul.menu-bar {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 10%;
+    }
+
+    div.menu-container ul.menu-bar div.menu-item-rack {
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 }
@@ -292,7 +320,7 @@ div.image-rack::after {
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 1, 0, 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -307,21 +335,20 @@ div.bannar-section div.image-rack img {
 
 div.bannar-title-section {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 200px 0 0 20px;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
     z-index: 10;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    height: 150px;
+    height: 200px;
 }
 
 div.bannar-title {
     color: #fff;
-    line-height: 2;
-    margin-bottom: 20px;
+    line-height: 2.5;
 }
 
 div.bannar-title h2 {
@@ -348,6 +375,10 @@ div.bannar-title h2 span {
     letter-spacing: 2px;
 }
 
+div.bannar-title p {
+    color: #d4d4d4;
+}
+
 div.bannar-title-section div.btn button {
     width: 176px;
     height: 35px;
@@ -372,12 +403,11 @@ div.bannar-title-section div.btn button:hover {
 
 @media (min-width: 576px) and (max-width: 970px) {
     div.bannar-title-section {
-        top: 50%;
+        top: 70%;
         left: 50%;
-        transform: translate(-50%,50%);
-        margin: 0;
+        transform: translate(-50%,-50%);
+        justify-content: space-around;
         width: 80%;
-        border: 1px solid red;
     }
 
     div.bannar-title {
@@ -386,11 +416,11 @@ div.bannar-title-section div.btn button:hover {
 
     div.bannar-title h2 {
         word-spacing: 2px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     div.bannar-title p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     div.bannar-title-section div.btn button {
@@ -407,12 +437,11 @@ div.bannar-title-section div.btn button:hover {
 
 @media (max-width: 575px) {
     div.bannar-title-section {
-        top: 50%;
+        top: 70%;
         left: 50%;
-        transform: translate(-50%,50%);
-        margin: 0;
+        transform: translate(-50%,-50%);
+        justify-content: space-around;
         width: 80%;
-        border: 1px solid red;
     }
 
     div.bannar-title {
