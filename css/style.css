@@ -376,6 +376,7 @@ div.bannar-title-section div.btn button:hover {
         left: 50%;
         transform: translate(-50%,-50%);
         width: 90%;
+        border: 1px solid red;
     }
 
     div.bannar-title {
@@ -409,6 +410,7 @@ div.bannar-title-section div.btn button:hover {
         left: 50%;
         transform: translate(-50%,-50%);
         width: 90%;
+        border: 1px solid red;
     }
 
     div.bannar-title {
