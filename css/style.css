@@ -503,6 +503,15 @@ div.para-container {
     background-color: teal;
 }
 
+div.para-container::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -95px; 
+    height: 95px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
 div.para-container div.para-rack {
     width: 69%;
     height: 100%;
@@ -572,6 +581,15 @@ div.account {
     padding: 40px;
     padding-top: 0;
 }
+
+div.account::before { 
+    display: block; 
+    content: " "; 
+    margin-top: 50px; 
+    height: 50px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
 
 div.account h2 {
     margin-bottom: 20px;
