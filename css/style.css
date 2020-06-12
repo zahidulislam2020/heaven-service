@@ -410,6 +410,10 @@ div.bannar-title-section div.btn button:hover {
 /* Midea Query implemented on Extra Small Device */
 
 @media (min-width: 576px) and (max-width: 970px) {
+    div.bannar-title h2 {
+        animation: glow paused;
+    }
+    
     div.bannar-section {
         height: 87vh;
     }
@@ -449,6 +453,10 @@ div.bannar-title-section div.btn button:hover {
 }
 
 @media (max-width: 575px) {
+    div.bannar-title h2 {
+        animation: glow paused;
+    }
+
     div.bannar-section {
         height: 90vh;
     }
@@ -487,6 +495,343 @@ div.bannar-title-section div.btn button:hover {
     }
 
 } /* Ends of Bannar */
+
+/* Start of Services */
+
+div.para-container {
+    width: 100%;
+    background-color: teal;
+}
+
+div.para-container div.para-rack {
+    width: 69%;
+    height: 100%;
+    color: #fff;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+div.para-container div.para-rack h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.para-container div.para-rack p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+div.services-icon-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+div.services-icon-container div.services-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 170px;
+    color: teal;
+}
+
+/* Media Query for Small Devices */
+
+@media (max-width: 575px) {
+    div.services-icon-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.services-icon-container div.services-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 170px;
+        padding: 15px;
+    }
+
+    div.services-icon-container div.services-icons i.fa-8x {
+        font-size: 100px;
+    }
+}
+
+/*  Account Start */
+
+div.account {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0;
+}
+
+div.account h2 {
+    margin-bottom: 20px;
+    color: teal;
+}
+
+div.account div.form-container {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    width: 35%;
+    min-width: 400px;
+}
+
+div.account div.form-container form {
+    padding: 20px;
+}
+
+div.account div.form-container form div.label-rack {
+    width: 100%;
+    padding: 20px 0 5px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+div.account div.form-container form div.label-rack i {
+    margin-right: 10px;
+}
+
+div.account div.form-container form input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+}
+
+div.account div.form-container form p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+div.account div.form-container form button {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: teal;
+    border: none;
+}
+
+/* Customer Judgement */
+
+div.customer-container {
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+div.customer-container h2 {
+    text-align: center;
+    margin: 10px 0;
+    color: teal;
+}
+
+div.customer-sub-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.customer-container div.customer-sub-container div.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: teal;
+}
+
+div.customer-container div.customer-sub-container div.card div.card-image-rack {
+    width: 100%;
+    height: 300px;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.customer-container div.customer-sub-container div.card div.card-image-rack img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    margin-top: 50px;
+    transform: scale(.8);
+    object-fit: cover;
+    clip-path: circle(40% at 50% 45%);
+    margin-bottom: 10px;
+}
+
+div.customer-container div.customer-sub-container div.card div.title-rack {
+    text-align: center;
+    color: #fff;
+    padding: 0px 20px 20px;
+}
+
+/* Start of Contact */
+
+div.contact-section {
+    width: 100%;
+    padding: 20px;
+}
+
+div.contact-section h2 {
+    text-align: center;
+    color: teal;
+    margin-bottom: 10px;
+}
+
+div.contact-section div.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.contact-section div.contact-container div.contact-form {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.contact-section div.contact-container div.contact-form input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+div.contact-section div.contact-container div.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+div.contact-section div.contact-container div.contact-form button {
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+}
+
+div.contact-section div.contact-container div.contact-address {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+div.contact-section div.contact-container div.contact-address div.hq {
+    margin-bottom: 10px;
+}
+
+/* Start of Footer */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin-right: 10px;
+}
+
+div.social-icon > span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+div.social-icon span:first-child {
+    margin-left: 0;
+}
+
+div.social-icon > span > i {
+    position: absolute;
+    font-size: 1.4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease-in-out;
+}
+
+div.social-icon > span.f {
+    border: 1px solid #3b5998;
+}
+
+div.social-icon > span.t {
+    border: 1px solid #00acee;
+}
+
+div.social-icon > span.l {
+    border: 1px solid #0e76a8;
+}
+
+div.social-icon > span.p {
+    border: 1px solid #c8232c;
+}
+
+div.social-icon > span > i.fa-facebook-f {
+    color: #3b5998;
+}
+
+div.social-icon > span > i.fa-twitter {
+    color: #00acee;
+}
+
+div.social-icon > span > i.fa-linkedin {
+    color: #0e76a8;
+}
+
+div.social-icon > span > i.fa-pinterest {
+    color: #c8232c;
+}
+
+div.social-icon > span.f:hover {
+    background: #3b5998;
+}
+
+div.social-icon > span.t:hover {
+    background: #00acee;
+}
+
+div.social-icon > span.l:hover {
+    background: #0e76a8;
+}
+
+div.social-icon > span.p:hover {
+    background: #c8232c;
+}
+
+div.social-icon > span:hover i {
+    color: #fff;
+}
+
 
 
 
